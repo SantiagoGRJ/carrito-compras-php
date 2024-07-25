@@ -102,7 +102,7 @@ if(isset($_SESSION['carrito'])){
                 <td></td>
                 <td></td>
                 <td><strong><?php echo  '$'.number_format($total,2); ?></strong></td>
-                <td></td>
+                <td><button onclick="window.location='../functions/pay.php'" class="btn btn-success btn-buy">Pagar</button></td>
                 </tr>
             </tfoot>
         </table>
@@ -146,6 +146,10 @@ if(isset($_SESSION['carrito'])){
                 
                 
             });
+
+            $(".btn-buy").click(function(){
+                
+            })
         });
     </script>
 </body>
